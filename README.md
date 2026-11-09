@@ -4,6 +4,25 @@ A static browser client for compatible iE Lock Bluetooth door locks. Use it on
 an iPhone through **Bluefy - Web BLE Browser**, or on Windows through a browser
 with Web Bluetooth support, such as Chrome or Edge.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <h3>Open the live site</h3>
+      <p><strong><a href="https://i-am-shodan.github.io/iE-Lock-web-app/">iE Lock | Access Console</a></strong></p>
+      <p>https://i-am-shodan.github.io/iE-Lock-web-app/</p>
+      <p>On iPhone, open this address in <strong>Bluefy</strong>, not Safari or Chrome.<br>
+      No download or self-hosting required.</p>
+    </td>
+  </tr>
+</table>
+
+## Preview
+
+[![iE Lock Access Console showing the disconnected overview, connection controls, and device capabilities](docs/access-console.png)](https://i-am-shodan.github.io/iE-Lock-web-app/)
+
+*The live console with no lock connected. No real lock data or saved credentials
+are shown.*
+
 This repository contains the ready-to-host site. No backend, Mac, Apple developer
 account, Node.js installation, or server-side build is needed to publish it.
 
@@ -15,6 +34,7 @@ replacement for the vendor app or your physical means of entry.
 
 | I want to... | Go to |
 | --- | --- |
+| Open the published console | [iE Lock \| Access Console](https://i-am-shodan.github.io/iE-Lock-web-app/) |
 | Connect from an iPhone | [Bluefy setup](#use-on-an-iphone-with-bluefy) |
 | Check browser and hardware limitations | [Compatibility and validation](#compatibility-and-validation) |
 | Publish my own copy or preview locally | [Hosting guide](docs/HOSTING.md) |
@@ -85,8 +105,9 @@ The browser is named **Bluefy**, sometimes mistyped as Bluefly.
 3. Move within Bluetooth range of the lock. Wake the lock using its normal
    controls if it is not advertising, and close other lock apps if they are
    holding the connection.
-4. Open **Bluefy itself** and enter the published **HTTPS website address** in
-   its address bar. Bookmark that address in Bluefy for future use.
+4. Open **Bluefy itself** and enter
+   **https://i-am-shodan.github.io/iE-Lock-web-app/** in its address bar.
+   Bookmark that address in Bluefy for future use.
 5. Select **Connect lock**, then choose the intended physical lock in the device
    chooser. Connection checks the expected service and characteristics before
    transmitting a PIN.
